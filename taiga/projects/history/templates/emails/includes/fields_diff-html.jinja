@@ -105,7 +105,7 @@
                     <strong>{{ ', '.join(values_added) }}</strong>
                     {% endif %}
 
-                    {% if values_removed %}
+                    {% if values_removed and values_removed[0] != None %}
                     <span>{{ _("removed") }}</span><br>
                     <strong>{{ ', '.join(values_removed) }}</strong>
                     {% endif %}
