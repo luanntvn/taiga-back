@@ -53,7 +53,7 @@
             {% if values_added %}
             * {{ _("added:") }} {{ ', '.join(values_added) }}
             {% endif %}
-            {% if values_removed %}
+            {% if values_removed and values_removed[0] != None %}
             * {{ _("removed:") }} {{ ', '.join(values_removed) }}
             {% endif %}
 
